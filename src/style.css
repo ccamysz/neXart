@@ -157,8 +157,41 @@ main{
     }
     .auth-buttons {
         flex-direction: column;
-        gap: 0.5rem;
+        gap: 0rem;
+        padding: 1rem;
     }
+    .auth-buttons a {
+        padding: 0.3rem 1rem;
+        font-size: 1rem; 
+        scale: 0.8;
+    }
+    .hero-content{
+        display: flex;
+        flex-direction: column;
+        margin-top: -50px;
+    }
+
+    .hero-text h1{
+        margin-top: 0;
+        font-size: 2rem; /* Diminui o tamanho do título */
+        line-height: 1.2;
+    }
+
+
+    .hero-content:first-child{
+
+        margin-top: 50vh;
+        text-align: center;
+        font-weight: 300px;
+
+    }.hero-visual img {
+        max-width: 500px; /* Reduz o tamanho da imagem */
+        margin-bottom: 2rem;
+    }
+    section .hero{
+        margin-top: -100px;
+    }
+
 }
 .nav-list.active{
     transform: translateX(0);
