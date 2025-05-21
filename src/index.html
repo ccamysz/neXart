@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>neXart</title>
-    <link rel="stylesheet" href="carrossel.css".css>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/carrossel.css".css>
+    <link rel="stylesheet" href="/src/style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         </style>
@@ -45,45 +45,40 @@
               </div>
             </div>
           </section>
-        <div class="slider">
+          <div class="slider">
+
             <div class="slides">
-                <!--radio buttons -->
+                <!-- Radio buttons for navigation -->
                 <input type="radio" name="radio-btn" id="radio1">
                 <input type="radio" name="radio-btn" id="radio2">
                 <input type="radio" name="radio-btn" id="radio3">
-                <input type="radio" name="radio-btn" id="radio4">
-                <!--radio buttons -->
-
-                <!--slide images-->
-                <div class="slide-fist">
-                    <img src="/imgs/1.jpg" alt="IMAGEM 1">
+        
+                <!-- Slide images -->
+                <div class="slide first">
+                    <img src="/imgs/1.jpg" alt="Imagem 1">
                 </div>
-
-                <div class="slide-second">
-                    <img src="/imgs/2.jpg" alt="IMAGEM 2">
+                <div class="slide">
+                    <img src="/imgs/2.jpg" alt="Imagem 2">
                 </div>
-
-                <div class="slide-third">
-                    <img src="/imgs/3.jpg" alt="IMAGEM 1">
+                <div class="slide">
+                    <img src="/imgs/3.jpg" alt="Imagem 3">
                 </div>
-                <!--fim do slide images-->
-
-                <!--navigation auto-->
+                    
+        
+                <!-- Automatic navigation -->
                 <div class="navigation-auto">
-                    <div class="auto-bnt1"></div>
-                    <div class="auto-bnt2"></div>
-                    <div class="auto-bnt3"></div>
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
                 </div>
-
             </div>
-            <div class="manual-navigation">
+        
+            <!-- Manual navigation -->
+            <div class="navigation-manual">
                 <label for="radio1" class="manual-btn"></label>
                 <label for="radio2" class="manual-btn"></label>
                 <label for="radio3" class="manual-btn"></label>
             </div>
-
-
-
         </div>
           
     </main>
