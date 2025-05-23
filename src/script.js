@@ -43,18 +43,25 @@ class MobileNavbar {
   );
   mobileNavbar.init();
 
-  let count = 1;
-  document.getElementById("radio1").checked = true;
-  
-  setInterval(function () {
-      nextImage();
-  }, 5000); // Troca de imagem a cada 5 segundos
-  
-  function nextImage() {
-      count++;
-      if (count > 4) {
-          count = 1;
-      }
-      document.getElementById("radio" + count).checked = true;
+  let currentSlide = 0;
+  const slides = document.querySelector('.slides');
+  const dots = document.querySelectorAll('.dot');
+  const totalSlides = dots.length;
+
+  function showSlide(index) {
+    slides.style.transform = `translateX(-${index * 100}vw)`;
+    dots.forEach(dot => dot.classList.remove('active'));
+    dots[index].classList.add('active');
+    currentSlide = index;
   }
 
+  function goToSlide(index) {
+    showSlide(index);
+  }
+
+  function autoSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+  }
+
+  setInterval(autoSlide, 5000);

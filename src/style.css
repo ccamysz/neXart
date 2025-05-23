@@ -218,3 +218,81 @@ main{
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
+
+/*cards dos artistas*/
+
+.artistas {
+    padding: 4rem 2rem;
+    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  
+  .artistas .intro h2 {
+    font-size: 2.5rem;
+    color: #0d26b6;
+    margin-top:280px;
+    margin-bottom: 0.5rem;
+    text-shadow: #000;
+  }
+
+
+  .artistas .intro p {
+    max-width: 800px;
+    margin: 0 auto 3rem auto;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+  }
+  
+  .artist-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    position: relative;
+    transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 320px;
+  }
+  
+  .artist-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .artist-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .artist-card .info {
+    padding: 1rem;
+    text-align: left;
+  }
+  
+  .artist-card h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #222;
+  }
+  
+  .artist-card p {
+    font-size: 0.95rem;
+    color: #666;
+  }
+  
+  .rating {
+    position: absolute;
+    bottom: 12px;
+    right: 16px;
+    font-size: 1.1rem;
+    color: #f5a623; /* cor das estrelas */
+  }
+  
