@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
 }
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
 a{
     color:#0000ff;
@@ -28,7 +33,7 @@ nav{
 
 main{
     background: url("");
-    height: 92vh;
+    height: 100vh;
 }
 .nav-list{
     list-style: none;
@@ -125,13 +130,12 @@ main{
     display: flex;
     justify-content: center;
     max-width: 600px; /* Aumenta o tamanho da imagem */
-    max-height: 100%;
     object-fit: cover;
     margin-bottom: 150px;
 }
 
 
-@media (max-width: 999px) {
+@media (max-width: 768px) {
     body {
       overflow-x: hidden;
     }
@@ -165,28 +169,32 @@ main{
         font-size: 1rem; 
         scale: 0.8;
     }
-    .hero-content{
-        display: flex;
-        flex-direction: column;
-        margin-top: -50px;
-    }
+    .hero-content {
+      flex-direction: column;
+      text-align: center;
+      gap: 2rem;
+      margin-bottom: 300px;
+  }
 
-    .hero-text h1{
-        margin-top: 0;
-        font-size: 2rem; /* Diminui o tamanho do título */
-        line-height: 1.2;
-    }
+  .hero-text h1 {
+      font-size: 1.5rem;
+      font-weight: 40px;
+  }
 
+  .hero-text p {
+      font-size: 1rem; 
+  }
 
+  .hero-visual img {
+    width: 400px;
+  }
     .hero-content:first-child{
-
         margin-top: 50vh;
         text-align: center;
         font-weight: 300px;
 
     }.hero-visual img {
-        max-width: 500px; /* Reduz o tamanho da imagem */
-        margin-bottom: 2rem;
+        max-width: 600px; /* Reduz o tamanho da imagem */
     }
     section .hero{
         margin-top: -100px;
@@ -218,20 +226,113 @@ main{
   .mobile-menu.active .line3 {
     transform: rotate(45deg) translate(-5px, -7px);
   }
+/* CAROUSEL 
+.carousel {
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  z-index: 1;
+}
+
+.slides {
+  display: flex;
+  width: 300vw;
+  height: 100vh;
+  transition: transform 0.5s ease-in-out;
+}
+
+
+.slide {
+  width: 100vw;
+  height: 100vh;
+  flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide img {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  display: block;
+}
+
+.button-container {
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  z-index: 2;
+}
+
+.button-container img {
+  width: 180px;
+  height: auto;
+  cursor: pointer;
+}
+/* fim do carousel*/
+
+/* DOTS */
+.dots {
+  text-align: center;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  .button-container img {
+    width: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .button-container {
+    left: 10px;
+    bottom: 30px;
+  }
+
+  .button-container img {
+    width: 100px;
+  }
+
+}
+/* FIM DO CAROUSEL */
 
 /*cards dos artistas*/
 
 .artistas {
-    padding: 4rem 2rem;
-    background-color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-  }
+  padding: 2rem 2rem;
+  margin-top: -200px; 
+  background-color: #ffffff;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+}
+
   
   .artistas .intro h2 {
     font-size: 2.5rem;
-    color: #0d26b6;
-    margin-top:280px;
+    color: #566ce9;
+    margin-top:0px;
     margin-bottom: 0.5rem;
     text-shadow: #000;
   }
@@ -246,10 +347,14 @@ main{
   
   .card-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     justify-items: center;
+    padding: 0 5vw; /* espaçamento lateral */
+    max-width: 1400px;
+    margin: 0 auto;
   }
+  
   
   .artist-card {
     background: #fff;

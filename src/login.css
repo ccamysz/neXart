@@ -1,0 +1,207 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body, html {
+  height: 100%;
+  width: 100%;
+  background: #f3f7ff;
+}
+
+/* Container principal */
+.login-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* Painel Esquerdo */
+.left-panel {
+  flex: 1;
+  background-image: url('/imgs/bckg1.png'); /* coloque aqui o caminho da imagem colorida */
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 0 20px 20px 0;
+  overflow: hidden;
+}
+
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  color: #fff;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Centraliza horizontalmente */
+  text-align: center; /* Centraliza o texto */
+}
+
+.quote-title {
+  font-size: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.overlay h2 {
+  font-size: 40px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+
+.quote-sub {
+  font-size: 10px;
+  max-width: 80%;
+}
+
+/* Painel Direito */
+.right-panel {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.form-box {
+  width: 100%;
+  max-width: 400px;
+  text-align: center; /* Centraliza o texto horizontalmente */
+}
+
+.logo {
+  width: 180px;
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #1e3a8a;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centraliza o texto verticalmente */
+}
+
+p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-align: center; /* Centraliza o texto horizontalmente */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Centraliza o texto verticalmente */
+}
+p.signup{
+  color: #000000;
+  font-size: 13px;
+}
+
+/* Formulário */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input,
+select {
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+input:focus,
+select:focus {
+  border-color: #1e3a8a;
+}
+
+/* Botões */
+.login-btn {
+  background-color: #1e3a8a;
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+
+.login-btn:hover {
+  background-color: #2b4fc7;
+}
+
+.google-btn {
+  background: #fff;
+  border: 1px solid #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.google-btn img {
+  width: 18px;
+  height: 18px;
+}
+
+.google-btn:hover {
+  background: #f2f2f2;
+}
+
+.signup {
+  margin-top: 20px;
+  font-size: 13px;
+}
+
+.signup a {
+  color: #1e3a8a;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.signup a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+  }
+
+  .left-panel {
+    display: none;
+  }
+
+  .right-panel {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .form-box {
+    max-width: 100%;
+  }
+}

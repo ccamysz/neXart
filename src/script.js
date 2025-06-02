@@ -65,3 +65,14 @@ class MobileNavbar {
   }
 
   setInterval(autoSlide, 5000);
+
+  function switchTab(tab) {
+    const tabs = document.querySelectorAll(".tab");
+    const forms = document.querySelectorAll(".form");
+
+    tabs.forEach(t => t.classList.remove("active"));
+    forms.forEach(f => f.classList.remove("active"));
+
+    document.querySelector(`.tab-switch .tab:nth-child(${tab === 'artista' ? 1 : 2})`).classList.add("active");
+    document.getElementById(`form-${tab}`).classList.add("active");
+  }

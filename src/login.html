@@ -1,26 +1,53 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Login</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - neXart</title>
+  <link rel="stylesheet" href="/src/login.css" />
+  <link rel="shortcut icon" href="/imgs/favicon.jpg" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="login-container">
-        <h1>neXart</h1>
-        <div class="login-options">
-            <button id="artist-login">Artista</button>
-            <button id="business-login">Empresário</button>
+  <div class="login-container">
+    <div class="left-panel">
+      <div class="overlay">
+        <p class="quote-title">CONECTANDO TALENTOS</p>
+                <h2>Conecte<br>Artistas e<br>Empresários</h2>
+                <p class="quote-sub">Dê visibilidade a artistas pequenos<br> ou encontre o talento perfeito para o seu evento.</p>
+            </div>
         </div>
-        <form class="login-form">
-            <input type="email" placeholder="Email" required>
-            <input type="password" placeholder="Senha" required>
+
+    <div class="right-panel">
+      <div class="form-box">
+        <a href="/src/index.html">
+          <img src="/imgs/logo.png" alt="Logo" class="logo">
+        </a>
+        <h1>Bem-vindo de Volta</h1>
+        <p>Digite seu email e senha para acessar sua conta</p>
+
+        <form>
+          <select required class="select-role">
+            <option value="">Selecione seu perfil</option>
+            <option value="artista">Sou Artista</option>
+            <option value="contratante">Sou Contratante</option>
+          </select>
+
+          <input type="email" placeholder="Email" required>
+          <input type="password" placeholder="Senha" required>
+
+          <div class="options">
+            <label><input type="checkbox"> Lembrar-me</label>
             <a href="#">Esqueceu a senha?</a>
-            <button type="submit">Entrar</button>
-            <a href="#">Cadastrar-se</a>
+          </div>
+
+          <button type="submit" class="login-btn"> Entrar</button>
+          <button class="google-btn"><img src="/imgs/google.png" alt=""> Entrar com Google</button>
         </form>
+
+        <p class="signup">Não tem uma conta? <a href="cadastro.html">Cadastre-se</a></p>
+      </div>
     </div>
-    <script src="js/script.js"></script>
+  </div>
 </body>
 </html>

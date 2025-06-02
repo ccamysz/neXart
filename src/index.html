@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>neXart</title>
-    <link rel="stylesheet" href="/src/carrossel.css".css>
     <link rel="stylesheet" href="/src/style.css">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
@@ -27,8 +26,8 @@
                 <li><a href="/">Contato</a></li>
             </ul>
             <div class="auth-buttons">
-                <a href="#" class="btn-primary">Entre</a>
-                <a href="#" class="btn-secondary">Cadastre-se</a>
+                <a href="login.html" class="btn-primary">Entre</a>
+                <a href="login.html" class="btn-secondary">Cadastre-se</a>
             </div>
         </nav>
     </header>
@@ -45,27 +44,33 @@
               </div>
             </div>
         </section>
+        
+        <!--
         <div class="carousel">
-            <div class="slides">
-              <div class="slide">
-                <img src="/imgs/1.jpg" alt="Slide 1" />
-                <div class="button-container">
-                  <a href="#destino">
-                    <img src="/imgs/saiba-mais.png" alt="Saiba mais" />
-                  </a>
-                </div>
+          <div class="slides">
+            <div class="slide">
+              <img src="/imgs/1.jpg" alt="Slide 1" />
+              <div class="button-container">
+                <a href="#destino">
+                  <img src="/imgs/saiba-mais.png" alt="Saiba mais" />
+                </a>
               </div>
-              <div class="slide"><img src="/imgs/2.jpg" alt="Slide 2" /></div>
-              <div class="slide"><img src="/imgs/3.jpg" alt="Slide 3" /></div>
             </div>
-            <div class="dots">
-              <span class="dot active" onclick="goToSlide(0)"></span>
-              <span class="dot" onclick="goToSlide(1)"></span>
-              <span class="dot" onclick="goToSlide(2)"></span>
+            <div class="slide">
+              <img src="/imgs/2.jpg" alt="Slide 2" />
+            </div>
+            <div class="slide">
+              <img src="/imgs/3.jpg" alt="Slide 3" />
             </div>
           </div>
-        
-          <!-- Exemplo de seção de destino -->
+          <div class="dots">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+          </div>
+          CAROUSEL -->
+
+        </div>        
           <div id="destino" style="height: 100vh; background-color: #fff; display: flex; align-items: center; justify-content: center; font-size: 2rem;">          
           <section class="artistas">
             <div class="intro">
@@ -104,6 +109,17 @@
                 <div class="info">
                   <h3>Renata Lima</h3>
                   <p>Fotógrafa documental</p>
+                </div>
+                <div class="rating">
+                  ★★★★☆
+                </div>
+              </div>
+              <!-- Card 4 -->
+              <div class="artist-card">
+                <img src="/imgs/pessoa4.jpeg" alt="Artista 4">
+                <div class="info">
+                  <h3>Bruno Oliveira</h3>
+                  <p>Pintor expressionista</p>
                 </div>
                 <div class="rating">
                   ★★★★☆
