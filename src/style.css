@@ -386,18 +386,130 @@ main{
     margin: 0;
     font-size: 1.2rem;
     color: #222;
+    text-align: center;
   }
   
   .artist-card p {
     font-size: 0.95rem;
     color: #666;
+    text-align: center;
   }
   
   .rating {
-    position: absolute;
+    width: 40px;
+    position:relative;
     bottom: 12px;
     right: 16px;
     font-size: 1.1rem;
     color: #f5a623; /* cor das estrelas */
+    margin: 5px auto 1rem auto;
+  }
+
+  /* chat */
+  .chat-btn {
+    margin: 5px auto 1rem auto;
+    display: block;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 2px solid #000000; /* Adiciona uma borda azul */
+    padding: 0.6rem 1.2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
+  .chat-btn:hover {
+    background-color: #ffffff;
+  }
+/* artistas*/
+
+.search-bar {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  padding: 0.5rem;
+  border: 2px solid #566ce9;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.search-bar input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.search-bar button {
+  background-color: #566ce9;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 1rem;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card-content p {
+  color: #666;
+  font-size: 0.95rem;
+  margin: 0.5rem 0;
+}
+
+.rating {
+  color: #f5a623;
+  font-size: 1.1rem;
+}
+
+.chat-btn {
+  background-color: #566ce9;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+  font-weight: 500;
+}
