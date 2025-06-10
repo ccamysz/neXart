@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chat - neXart </title>
+    <title>neXart</title>
     <link rel="stylesheet" href="/src/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
 </head>
 <body>
     <header>
@@ -16,10 +19,10 @@
                 <div class="line3"></div>
             </div>
             <ul class="nav-list">
-                <li><a href="/">Início</a></li>
-                <li><a href="/">Artistas</a></li>
-                <li><a href="/">Chat</a></li>
-                <li><a href="/">Contato</a></li>
+                <li><a href="/src/index.html">Início</a></li>
+                <li><a href="/src/artistas.html">Artistas</a></li>
+                <li><a href="/src/chat.html">Chat</a></li>
+                <li><a href="/src/index.html">Contato</a></li>
             </ul>
             <div class="auth-buttons">
                 <a href="login.html" class="btn-primary">Entre</a>
@@ -27,5 +30,63 @@
             </div>
         </nav>
     </header>
+    <main>
+      <div class="search-wrapper">
+        <div class="search-bar">
+          <input type="text" placeholder="Pesquisar artistas...">
+          <button>Buscar</button>
+        </div>
+      </div>
+        </section>
+            <div class="card-grid">
+              <!-- Card 1 -->
+              <div class="artist-card">
+                <img src="/imgs/pessoa1.jpeg" alt="Artista 1">
+                <div class="info">
+                  <h3>Ana Castro</h3>
+                  <p>Ilustradora digital</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+          
+              <!-- Card 2 -->
+              <div class="artist-card">
+                <img src="/imgs/pessoa2.jpeg" class="Artista2">
+                <div class="info">
+                  <h3>Lucas Mendes</h3>
+                  <p>Escultor contemporâneo</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+          
+              <!-- Card 3 -->
+              <div class="artist-card">
+                <img src="/imgs/pessoa3.jpeg" alt="Artista 3">
+                <div class="info">
+                  <h3>Renata Lima</h3>
+                  <p>Fotógrafa documental</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+              <!-- Card 4 -->
+              <div class="artist-card">
+                <img src="/imgs/pessoa4.jpeg" alt="Artista 4">
+                <div class="info">
+                  <h3>Bruno Oliveira</h3>
+                  <p>Pintor expressionista</p>
+                </div>
+                
+                <button class="chat-btn" onclick="window.location.href='chat.html'">Conversar </button>
+                <div class="rating">★★★★☆</div>
+              </div>
+            </div>
+          </div>
+          </section>
+          
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
