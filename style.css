@@ -27,7 +27,7 @@ nav{
     justify-content: space-around;
     align-items: center;
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background: transparent;
     height: 8vh;
     z-index: 1000;
 }
@@ -340,9 +340,9 @@ main{
 /*cards dos artistas*/
 
 .artistas {
+  background: transparent;
   padding: 2rem 2rem;
-  margin-top: -200px; 
-  background-color: #ffffff;
+  margin-bottom: -25px; 
   font-family: 'Poppins', sans-serif;
   text-align: center;
 }
@@ -350,18 +350,17 @@ main{
   
   .artistas .intro h2 {
     justify-content: center;
-    font-size: 20px;
+    font-size: 1.5rem;
     color: #566ce9;
-    margin-top:0px;
-    margin-bottom: 0.5rem;
+    margin-top: 80px;
     text-shadow: #000;
   }
 
 
   .artistas .intro p {
     max-width: 800px;
-    margin: 0 auto 3rem auto;
-    font-size: 1.1rem;
+    margin: 20px auto auto auto;
+    font-size: 1.3rem;
     color: #555;
   }
   
@@ -370,7 +369,7 @@ main{
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     justify-items: center;
-    padding: 0 5vw; /* espaçamento lateral */
+    padding: 5rem 5vw; /* adiciona espaçamento superior para posicionar mais embaixo */
     max-width: 1400px;
     margin: 0 auto;
   }
@@ -447,35 +446,167 @@ header h1 {
   margin-bottom: 0.5rem;
 }
 
-.search-bar {
-  max-width: 500px;
-  margin: 0 auto 2rem auto; /* Adiciona uma margem inferior considerável */
+.search-form {
+  margin-top: 1.5rem;
   display: flex;
-  padding: 0.5rem;
-  border: 2px solid #566ce9;
-  border-radius: 8px;
-  background-color: #fff;
+  gap: 0.5rem;
+  background: white;
+  border-radius: 2rem;
+  padding: 0.4rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.search-bar input {
-  flex: 1;
+.search-form input {
   border: none;
   outline: none;
-  font-size: 1rem;
-  padding: 0.5rem;
-}
-
-.search-bar button {
-  background-color: #566ce9;
-  color: white;
-  border: none;
   padding: 0.5rem 1rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 500;
+  font-size: 1rem;
+  border-radius: 2rem;
+  width: 250px;
 }
 
+.search-form button {
+  background: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
 
+/* Responsivo */
+@media (max-width: 768px) {
+  .search-form {
+    flex-direction: row;
+    width: 90%;
+  }
+
+  .search-form input {
+    width: 100%;
+  }
+}
+
+.search-bar button img.search-icon {
+  width: 20px;
+  height: 20px;
+}
+.hero-section {
+  width: 100%;
+  height: 60vh; /* altura ajustável */
+  background-image: url('/imgs/img-fundo.png'); /* <-- coloque aqui o caminho da sua imagem */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0)), 
+              url('/imgs/img-fundo.png'); /* Adiciona o degradê branco no topo */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:#0000cc;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  background-size: cover; /* Garante que a imagem cubra toda a área */
+  background-position: center; /* Centraliza a imagem */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+}
+
+.hero-overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-overlay p {
+  font-size: 1.2rem;
+}
+/*animação*/
+p
+h1
+.hero-overlay h1,
+.hero-overlay p,
+.search-form,
+.nav-list li,
+.hero-text h1,
+.hero-text p,
+.hero-visual img,
+.artist-card,
+.chat-btn {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease forwards;
+}
+
+.hero-overlay h1 { animation-delay: 0.2s; }
+.hero-overlay p { animation-delay: 0.4s; }
+.search-form { animation-delay: 0.6s; }
+.nav-list li { animation-delay: 0.8s; }
+.hero-text h1 { animation-delay: 1s; }
+.hero-text p { animation-delay: 1.2s; }
+.hero-visual img { animation-delay: 1.0s; }
+.artist-card { animation-delay: 1.6s; }
+.chat-btn { animation-delay: 1.8s; }
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 40vh;
+  }
+
+  .hero-overlay h1 {
+    font-size: 2rem;
+  }
+
+  .hero-overlay p {
+    font-size: 1rem;
+  }
+}
+/* filtros
+.filtros {
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.filtros h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #222;
+}
+
+.filtros-opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.filtro {
+  background: white;
+  border: 2px solid #0044ff;
+  color: #0044ff;
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filtro:hover,
+.filtro.ativo {
+  background: #0044ff;
+  color: white;
+}
+ filtros */
 .card {
   background-color: #fff;
   border-radius: 12px;
