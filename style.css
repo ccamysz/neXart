@@ -524,8 +524,8 @@ header h1 {
   font-size: 1.2rem;
 }
 /*animação*/
-p
-h1
+.intro p
+.intro h1
 .hero-overlay h1,
 .hero-overlay p,
 .search-form,
@@ -539,7 +539,8 @@ h1
   transform: translateY(20px);
   animation: fadeInUp 1s ease forwards;
 }
-
+.intro p { animation-delay: 0.4s; }
+.intro h1 { animation-delay: 0.2s; }
 .hero-overlay h1 { animation-delay: 0.2s; }
 .hero-overlay p { animation-delay: 0.4s; }
 .search-form { animation-delay: 0.6s; }
