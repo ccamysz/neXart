@@ -42,29 +42,30 @@ class MobileNavbar {
     ".nav-list li",
   );
   mobileNavbar.init();
-
+  
   let currentSlide = 0;
-  const slides = document.querySelector('.slides');
-  const dots = document.querySelectorAll('.dot');
-  const totalSlides = dots.length;
+const slides = document.querySelector('.slides');
+const dots = document.querySelectorAll('.dot');
+const totalSlides = dots.length;
 
-  function showSlide(index) {
-    slides.style.transform = `translateX(-${index * 100}vw)`;
-    dots.forEach(dot => dot.classList.remove('active'));
-    dots[index].classList.add('active');
-    currentSlide = index;
-  }
+function showSlide(index) {
+  if (!slides || dots.length === 0) return;
+  slides.style.transform = `translateX(-${index * 100}vw)`;
+  dots.forEach(dot => dot.classList.remove('active'));
+  dots[index].classList.add('active');
+  currentSlide = index;
+}
 
-  function goToSlide(index) {
-    showSlide(index);
-  }
+function goToSlide(index) {
+  showSlide(index);
+}
 
-  function autoSlide() {
-    currentSlide = (currentSlide + 1) % totalSlides;
-    showSlide(currentSlide);
-  }
+function autoSlide() {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  showSlide(currentSlide);
+}
 
-  setInterval(autoSlide, 5000);
+setInterval(autoSlide, 6000); // muda a cada 6 segundos
 
   function switchTab(tab) {
     const tabs = document.querySelectorAll(".tab");

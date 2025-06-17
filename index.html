@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>neXart</title>
     <link rel="stylesheet" href="style.css">
+    <link class="favicon" rel="shortcut icon" href="/imgs/neXart.png" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         </style>
@@ -22,7 +23,7 @@
                 <li><a href="index.html">Início</a></li>
                 <li><a href="artistas.html">Artistas</a></li>
                 <li><a href="chat.html">Chat</a></li>
-                <li><a href="index.html">Contato</a></li>
+                <li><a href="#contato" >Contato</a></li>
             </ul>
             <div class="auth-buttons">
                 <a href="login.html" class="btn-primary">Entre</a>
@@ -42,33 +43,7 @@
                 <img src="/imgs/gif1.gif" alt="Ilustração">
               </div>
             </div>
-        </section>
-        
-        <!--
-        <div class="carousel">
-          <div class="slides">
-            <div class="slide">
-              <img src="/imgs/1.jpg" alt="Slide 1" />
-              <div class="button-container">
-                <a href="#destino">
-                  <img src="/imgs/saiba-mais.png" alt="Saiba mais" />
-                </a>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="/imgs/2.jpg" alt="Slide 2" />
-            </div>
-            <div class="slide">
-              <img src="/imgs/3.jpg" alt="Slide 3" />
-            </div>
-          </div>
-          <div class="dots">
-            <span class="dot active" onclick="goToSlide(0)"></span>
-            <span class="dot" onclick="goToSlide(1)"></span>
-            <span class="dot" onclick="goToSlide(2)"></span>
-          </div>
-          CAROUSEL -->
-
+          </section>
         </div>        
           <div id="destino" style="height: 100vh; background-color: #fff; display: flex; align-items: center; justify-content: center; font-size: 2rem;">          
           <section class="artistas">
@@ -124,8 +99,71 @@
             </div>
           </div>
           </section>
-          
+          <section class="cta-carousel">
+        <div class="slides-container">
+          <div class="slides">
+            <div class="slide">
+              <div class="slide-content">
+                <img src="/imgs/1.png" alt="">
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-content">
+                <img src="/imgs/2.png" alt="">
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide-content">
+                <img src="/imgs/3.png" alt="">
+                <a href="cadastro.html" class="btn-cta">Entrar na comunidade</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-dots">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+          </div>
+        </div>
     </main>
+    <footer id="contato" class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h2>neXart</h2>
+        <p>Conectamos artistas ao futuro digital. Inovação, criatividade e tecnologia em um só lugar.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Links rápidos</h3>
+        <ul>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Redes sociais</h3>
+        <div class="social-icons">
+          <a href="#"><img src="/imgs/instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="/imgs/linkedin.png" alt="LinkedIn"></a>
+          <a href="#"><img src="/imgs/twitter.png" alt="Twitter"></a>
+        </div>
+      </div>
+      <div class="footer-newsletter">
+        <h3>Assine nossa newsletter</h3>
+        <form>
+          <input type="email" placeholder="Seu e-mail">
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 neXart. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+
     <script src="script.js"></script>
 </body>
 </html>

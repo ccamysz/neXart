@@ -1,4 +1,3 @@
-/* Reset básico */
 * {
   margin: 0;
   padding: 0;
@@ -12,24 +11,21 @@ body, html {
   background: #f3f7ff;
 }
 
-/* Container principal */
 .login-container {
   display: flex;
   height: 100vh;
   width: 100%;
 }
 
-/* Painel Esquerdo */
 .left-panel {
   flex: 1;
-  background-image: url('/imgs/bckg1.png'); /* coloque aqui o caminho da imagem colorida */
+  background-image: url('/imgs/bckg1.png');
   background-size: cover;
   background-position: center;
   position: relative;
   border-radius: 0 20px 20px 0;
   overflow: hidden;
 }
-
 
 .overlay {
   background: rgba(0, 0, 0, 0.514);
@@ -39,8 +35,8 @@ body, html {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; /* Centraliza horizontalmente */
-  text-align: center; /* Centraliza o texto */
+  align-items: center;
+  text-align: center;
 }
 
 .quote-title {
@@ -62,7 +58,6 @@ body, html {
   max-width: 80%;
 }
 
-/* Painel Direito */
 .right-panel {
   flex: 1;
   background: #fff;
@@ -70,13 +65,15 @@ body, html {
   justify-content: center;
   align-items: center;
   padding: 40px;
-  text-align: center; /* Centraliza o texto horizontalmente */
+  text-align: center;
 }
 
 .form-box {
   width: 100%;
   max-width: 400px;
-  text-align: center; /* Centraliza o texto horizontalmente */
+  text-align: center;
+  border-radius: 30px;
+  
 }
 
 .logo {
@@ -92,24 +89,23 @@ h1 {
   text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center; /* Centraliza o texto verticalmente */
+  align-items: center;
 }
 
 p {
   font-size: 14px;
   margin-bottom: 20px;
   color: #ffffff;
-  text-align: center; /* Centraliza o texto horizontalmente */
+  text-align: center;
   display: flex;
   justify-content: center;
-  align-items: center; /* Centraliza o texto verticalmente */
+  align-items: center;
 }
 p.signup{
   color: #000000;
   font-size: 13px;
 }
 
-/* Formulário */
 form {
   display: flex;
   flex-direction: column;
@@ -120,7 +116,7 @@ input,
 select {
   padding: 12px 15px;
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 30px;
   font-size: 14px;
   outline: none;
   transition: 0.2s ease;
@@ -131,18 +127,16 @@ select:focus {
   border-color: #1e3a8a;
 }
 
-/* Botões */
 .login-btn {
   background-color: #1e3a8a;
   color: #fff;
   padding: 12px;
   border: none;
-  border-radius: 8px;
+  border-radius: 30px;
   font-weight: 600;
   cursor: pointer;
   transition: 0.3s ease;
 }
-
 
 .login-btn:hover {
   background-color: #2b4fc7;
@@ -156,7 +150,7 @@ select:focus {
   justify-content: center;
   gap: 10px;
   padding: 12px;
-  border-radius: 8px;
+  border-radius: 30px;
   font-weight: 500;
   cursor: pointer;
   transition: 0.3s ease;
@@ -186,7 +180,6 @@ select:focus {
   text-decoration: underline;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
   .login-container {
     flex-direction: column;
@@ -200,9 +193,16 @@ select:focus {
     flex: none;
     width: 100%;
     padding: 20px;
+    border-radius: 30px;
   }
 
   .form-box {
     max-width: 100%;
+    border-radius: 30px;
+  }
+
+  input,
+  select {
+    border-radius: 30px;
   }
 }
