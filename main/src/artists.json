@@ -1,0 +1,102 @@
+[
+  {
+    "nome": "Ana Castro",
+    "profissao": "Ilustradora digital",
+    "imagem": "/imgs/pessoa1.jpeg"
+  },
+  {
+    "nome": "Lucas Mendes",
+    "profissao": "Escultor",
+    "imagem": "/imgs/pessoa2.jpeg"
+  },
+  {
+    "nome": "Renata Lima",
+    "profissao": "Fotógrafa",
+    "imagem": "/imgs/pessoa3.jpeg"
+  },
+  {
+    "nome": "Bruno Oliveira",
+    "profissao": "Pintor",
+    "imagem": "/imgs/pessoa4.jpeg"
+  },
+  {
+    "nome": "Julia Silva",
+    "profissao": "Fotógrafa",
+    "imagem": "/imgs/pessoa5.jpg"
+  },
+  {
+    "nome": "Firetx",
+    "profissao": "Grupo de dança",
+    "imagem": "/imgs/pessoa6.jpg"
+  },
+  {
+    "nome": "Caio Lisboa",
+    "profissao": "Músico e compositor",
+    "imagem": "/imgs/pessoa7.jpg"
+  },
+  {
+    "nome": "Theo Ramos",
+    "profissao": "Escultor e ceramista",
+    "imagem": "/imgs/pessoa8.jpg"
+  },
+  {
+    "nome": "Lívia Andrade",
+    "profissao": "Pintora e muralista",
+    "imagem": "/imgs/pessoa9.jpg"
+  },
+  {
+    "nome": "Lucas Azevedo",
+    "profissao": "Fotógrafo",
+    "imagem": "/imgs/pessoa10.jpg"
+  },
+  {
+    "nome": "Ayumi Takahashi",
+    "profissao": "Pintora",
+    "imagem": "/imgs/pessoa11.jpg"
+  },
+  {
+    "nome": "Otávio Klein",
+    "profissao": "Modelo",
+    "imagem": "/imgs/pessoa12.jpg"
+  },
+  {
+    "nome": "Jorge Mendez",
+    "profissao": "Cantor e Compositor",
+    "imagem": "/imgs/pessoa13.jpg"
+  },
+  {
+    "nome": "AZZ",
+    "profissao": "Grupo de dança",
+    "imagem": "/imgs/pessoa14.jpg"
+  },
+  {
+    "nome": "Elias Nobre",
+    "profissao": "Ator",
+    "imagem": "/imgs/pessoa15.jpg"
+  },
+  {
+    "nome": "Nina Lobo",
+    "profissao": "Cantora",
+    "imagem": "/imgs/pessoa16.jpg"
+  },
+  {
+    "nome": "Claire Dupont",
+    "profissao": "Cantora e Compositora",
+    "imagem": "/imgs/pessoa17.jpg"
+  },
+  {
+    "nome": "Luna Navarro",
+    "profissao": "Artista de body art",
+    "imagem": "/imgs/pessoa18.jpg"
+  },
+  {
+    "nome": "Gabriel Munhoz",
+    "profissao": "Modelo",
+    "imagem": "/imgs/pessoa19.jpg"
+  },
+  {
+    "nome": "Iara Vasques",
+    "profissao": "Estilista e figurinista teatral",
+    "imagem": "/imgs/pessoa20.jpg"
+  }
+]

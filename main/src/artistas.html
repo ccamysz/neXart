@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>neXart</title>
+    <link class="favicon" rel="shortcut icon" href="/main/src/imgs/neXart.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="/main/src/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a  class="logo" href="index.html"><img width="180px"src="/imgs/logo.png" alt=""></a>
+            <div class="mobile-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            <ul class="nav-list">
+                <li><a href="/main/src/index.html">Início</a></li>
+                <li><a href="/main/src/artistas.html">Artistas</a></li>
+                <li><a href="/main/src/chat.html">Chat</a></li>
+                <li><a href="/main/src/index.html">Contato</a></li>
+            </ul>
+            <div class="auth-buttons">
+                <a href="/main/src/login.html" class="btn-primary">Entre</a>
+                <a href="/main/src/cadastro.html" class="btn-secondary">Cadastre-se</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+           
+      </div>
+        </section>
+        <section class="hero-section">
+  <div class="hero-overlay">
+    <h1>Bem-vindo ao neXart</h1>
+    <p>Descubra artistas e compartilhe seu talento</p>
+
+   <!-- Barra de pesquisa -->
+<form class="search-form" onsubmit="event.preventDefault();">
+  <input type="text" id="searchInput" placeholder="Buscar artistas, estilos..." />
+  <button type="submit">🔍</button>
+
+  <!-- Filtro com botão e dropdown estilizado -->
+  <div class="custom-filter">
+    <button id="filterToggle" type="button">
+      <img src="https://img.icons8.com/ios-glyphs/30/000000/filter.png" alt="Filtro" />
+    </button>
+    <ul id="filterList" class="hidden">
+      <li data-categoria="">Todas</li>
+      <li data-categoria="artes-visuais">Artes Visuais</li>
+      <li data-categoria="fotografia">Fotografia</li>
+      <li data-categoria="musica">Música</li>
+      <li data-categoria="danca">Dança</li>
+      <li data-categoria="moda">Moda & Estilo</li>
+      <li data-categoria="atuacao">Atuação</li>
+      <li data-categoria="outros">Performance & Outros</li>
+    </ul>
+  </div>
+</form>
+
+<!-- Cards -->
+
+</section>       
+            <div class="card-grid" id="cardsContainer">
+              <!-- Card 1 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa1.jpeg" alt="Artista 1">
+                <div class="info">
+                  <h3>Ana Castro</h3>
+                  <p>Ilustradora digital</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa2.jpeg" class="Artista2" alt="Artista 2">
+                <div class="info">
+                  <h3>Lucas Mendes</h3>
+                  <p>Escultor</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="artist-card">
+                <img src="/imgs/pessoa3.jpeg" alt="Artista 3">
+                <div class="info">
+                  <h3>Renata Lima</h3>
+                  <p>Fotógrafa</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa4.jpeg" alt="Artista 4">
+                <div class="info">
+                  <h3>Bruno Oliveira</h3>
+                  <p>Pintor</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar </button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 5 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa5.jpg" alt="Artista 5">
+                <div class="info">
+                  <h3>Julia Silva</h3>
+                  <p>Fotógrafa</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 6 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa6.jpg" alt="Artista 6">
+                <div class="info">
+                  <h3>Firetx</h3>
+                  <p>Grupo de dança</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 7 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa7.jpg" alt="Artista 7">
+                <div class="info">
+                  <h3>Caio Lisboa</h3>
+                  <p> Músico e compositor</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 8 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa8.jpg" alt="Artista 8">
+                <div class="info">
+                  <h3>Theo Ramos</h3>
+                  <p>Escultor e ceramista</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 9 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa9.jpg" alt="Artista 9">
+                <div class="info">
+                  <h3>Lívia Andrade</h3>
+                  <p>Pintora e muralista</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 10 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa10.jpg" alt="Artista 10">
+                <div class="info">
+                  <h3>Lucas Azevedo</h3>
+                  <p>Fotógrafo</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 11 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa11.jpg" alt="Artista 11">
+                <div class="info">
+                  <h3>Ayumi Takahashi</h3>
+                  <p>Pintora</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 12 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa12.jpg" alt="Artista 12">
+                <div class="info">
+                  <h3>Otávio Klein</h3>
+                  <p>Modelo</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 13 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa13.jpg" alt="Artista 13">
+                <div class="info">
+                  <h3>Jorge Mendez</h3>
+                  <p>Cantor e Compositor</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 14 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa14.jpg" alt="Artista 14">
+                <div class="info">
+                  <h3>AZZ</h3>
+                  <p>Grupo de dança</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 15 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa15.jpg" alt="Artista 15">
+                <div class="info">
+                  <h3>Elias Nobre</h3>
+                  <p>Ator</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 16 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa16.jpg" alt="Artista 16">
+                <div class="info">
+                  <h3>Nina Lobo</h3>
+                  <p>Cantora</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 17 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa17.jpg" alt="Artista 17">
+                <div class="info">
+                  <h3>Claire Dupont</h3>
+                  <p>Cantora e Compositora</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 18 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa18.jpg" alt="Artista 18">
+                <div class="info">
+                  <h3>Luna Navarro</h3>
+                  <p>Artista de body art</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 19 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa19.jpg" alt="Artista 19">
+                <div class="info">
+                  <h3>Gabriel Munhoz </h3>
+                  <p>Modelo</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+
+              <!-- Card 20 -->
+              <div class="artist-card">
+                <img src="/main/src/imgs/pessoa20.jpg" alt="Artista 20">
+                <div class="info">
+                  <h3>Iara Vasques </h3>
+                  <p>Estilista e figurinista teatral</p>
+                </div>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
+                <div class="rating">★★★★☆</div>
+              </div>
+            </div>
+          <p class="p-end">Você chegou ao fim. </p>
+    </main>
+    <footer id="contato" class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <h2>neXart</h2>
+        <p>Conectamos artistas ao futuro digital. Inovação, criatividade e tecnologia em um só lugar.</p>
+      </div>
+      <div class="footer-links">
+        <h3>Links rápidos</h3>
+        <ul>
+          <li><a href="#sobre">Sobre nós</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Redes sociais</h3>
+        <div class="social-icons">
+          <a href="#"><img src="/main/src/imgs/instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="/main/src/imgs/linkedin.png" alt="LinkedIn"></a>
+          <a href="#"><img src="/main/src/imgs/twitter.png" alt="Twitter"></a>
+        </div>
+      </div>
+      <div class="footer-newsletter">
+        <h3>Assine nossa newsletter</h3>
+        <form>
+          <input type="email" placeholder="Seu e-mail">
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 neXart. Todos os direitos reservados.</p>
+    </div>
+  </div>
+</footer>
+    <script src="/main/src/script.js"></script>
+</body>
+</html>

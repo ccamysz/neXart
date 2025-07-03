@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>neXart</title>
-    <link rel="stylesheet" href="style.css">
-    <link class="favicon" rel="shortcut icon" href="/imgs/neXart.png" type="image/x-icon">
+    <link rel="stylesheet" href="/main/src/style.css">
+    <link class="favicon" rel="shortcut icon" href="/main/src/imgs/neXart.png" type="image/x-icon">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         </style>
@@ -13,21 +13,21 @@
 <body>
     <header>
         <nav>
-            <a  class="logo" href="index.html"><img width="180px"src="/imgs/logo.png" alt=""></a>
+            <a  class="logo" href="/main/src/index.html"><img width="180px"src="/main/src/imgs/logo.png" alt=""></a>
             <div class="mobile-menu">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
             <ul class="nav-list">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="artistas.html">Artistas</a></li>
-                <li><a href="chat.html">Chat</a></li>
+                <li><a href="/main/src/index.html">Início</a></li>
+                <li><a href="/main/src/artistas.html">Artistas</a></li>
+                <li><a href="/main/src/chat.html">Chat</a></li>
                 <li><a href="#contato" >Contato</a></li>
             </ul>
             <div class="auth-buttons">
-                <a href="login.html" class="btn-primary">Entre</a>
-                <a href="cadastro.html" class="btn-secondary">Cadastre-se</a>
+                <a href="/main/src/login.html" class="btn-primary">Entre</a>
+                <a href="/main/src/cadastro.html" class="btn-secondary">Cadastre-se</a>
             </div>
         </nav>
     </header>
@@ -40,12 +40,12 @@
                 <p>Explore o universo da arte e impulsione conexões entre artistas emergentes e investidores visionários.</p>
               </div>
               <div class="hero-visual ">
-                <img src="/imgs/gif1.gif" alt="Ilustração">
+                <img src="/main/src/imgs/gif1.gif" alt="Ilustração">
               </div>
             </div>
           </section>
         </div>        
-          <div id="destino" style="height: 100vh; background-color: #fff; display: flex; align-items: center; justify-content: center; font-size: 2rem;">          
+          <div id="destino" >          
           <section class="artistas">
             <div class="intro">
               <h2>Artistas em Destaque</h2>
@@ -55,45 +55,44 @@
             <div class="card-grid">
               <!-- Card 1 -->
               <div class="artist-card">
-                <img src="/imgs/pessoa1.jpeg" alt="Artista 1">
+                <img src="/main/src/imgs/pessoa1.jpeg" alt="Artista 1">
                 <div class="info">
                   <h3>Ana Castro</h3>
                   <p>Ilustradora digital</p>
                 </div>
-                <button class="chat-btn" onclick="window.location.href='chat.html'">Conversar</button>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
                 <div class="rating">★★★★☆</div>
               </div>
           
               <!-- Card 2 -->
               <div class="artist-card">
-                <img src="/imgs/pessoa2.jpeg" class="Artista2">
+                <img src="/main/src/imgs/pessoa2.jpeg" class="Artista2">
                 <div class="info">
                   <h3>Lucas Mendes</h3>
                   <p>Escultor contemporâneo</p>
                 </div>
-                <button class="chat-btn" onclick="window.location.href='chat.html'">Conversar</button>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
                 <div class="rating">★★★★☆</div>
               </div>
           
               <!-- Card 3 -->
               <div class="artist-card">
-                <img src="/imgs/pessoa3.jpeg" alt="Artista 3">
+                <img src="/main/src/imgs/pessoa3.jpeg" alt="Artista 3">
                 <div class="info">
                   <h3>Renata Lima</h3>
                   <p>Fotógrafa documental</p>
                 </div>
-                <button class="chat-btn" onclick="window.location.href='chat.html'">Conversar</button>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar</button>
                 <div class="rating">★★★★☆</div>
               </div>
               <!-- Card 4 -->
               <div class="artist-card">
-                <img src="/imgs/pessoa4.jpeg" alt="Artista 4">
+                <img src="/main/src/imgs/pessoa4.jpeg" alt="Artista 4">
                 <div class="info">
                   <h3>Bruno Oliveira</h3>
                   <p>Pintor expressionista</p>
                 </div>
-                
-                <button class="chat-btn" onclick="window.location.href='chat.html'">Conversar </button>
+                <button class="chat-btn" onclick="window.location.href='/main/src/chat.html'">Conversar </button>
                 <div class="rating">★★★★☆</div>
               </div>
             </div>
@@ -104,18 +103,18 @@
           <div class="slides">
             <div class="slide">
               <div class="slide-content">
-                <img src="/imgs/1.png" alt="">
+                <img src="/main/src/imgs/1.png" alt="">
               </div>
             </div>
             <div class="slide">
               <div class="slide-content">
-                <img src="/imgs/2.png" alt="">
+                <img src="/main/src/imgs/2.png" alt="">
               </div>
             </div>
             <div class="slide">
               <div class="slide-content">
-                <img src="/imgs/3.png" alt="">
-                <a href="cadastro.html" class="btn-cta">Entrar na comunidade</a>
+                <img src="/main/src/imgs/3.png" alt="">
+                <a href="/main/src/cadastro.html" class="btn-cta">Entrar na comunidade</a>
               </div>
             </div>
           </div>
@@ -145,9 +144,9 @@
       <div class="footer-social">
         <h3>Redes sociais</h3>
         <div class="social-icons">
-          <a href="#"><img src="/imgs/instagram.png" alt="Instagram"></a>
-          <a href="#"><img src="/imgs/linkedin.png" alt="LinkedIn"></a>
-          <a href="#"><img src="/imgs/twitter.png" alt="Twitter"></a>
+          <a href="#"><img src="/main/src/imgs/instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="/main/src/imgs/linkedin.png" alt="LinkedIn"></a>
+          <a href="#"><img src="/main/src/imgs/twitter.png" alt="Twitter"></a>
         </div>
       </div>
       <div class="footer-newsletter">
@@ -164,6 +163,6 @@
   </div>
 </footer>
 
-    <script src="script.js"></script>
+    <script src="/main/src/script.js"></script>
 </body>
 </html>
